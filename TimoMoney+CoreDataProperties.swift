@@ -18,5 +18,5 @@ extension TimoMoney {
     }
 
     @NSManaged public var money: Int64
-
+	@NSManaged public var id: Int16
 }

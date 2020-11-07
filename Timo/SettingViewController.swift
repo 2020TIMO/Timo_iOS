@@ -12,7 +12,10 @@ class SettingViewController: UIViewController{
 	
 	@IBOutlet weak var moneyText: UITextField!
 	@IBAction func charge(_ sender: Any) {
-//		CoreDataManager.shared.saveMoney(money: timomoney)
+		CoreDataManager.shared
+			.saveMoney(id: 1, money: timomoney) { onSuccess in
+							   print("saved = \(onSuccess)")
+			   }
 	}
 	@IBOutlet weak var nowMoney: UILabel!
 	var timomoney: Int64 = 0
@@ -20,8 +23,10 @@ class SettingViewController: UIViewController{
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		timomoney = Int64((moneyText.text as! NSString).integerValue)
-		nowMoney.text = CoreDataManager.shared.fetchedMoney.first?.value(forKey: "money") as? String
+		let users: [TimoMoney] = CoreDataManager.shared.getMoney()
+		let userNames: [Int64] = users.map({$0.money})
 		
+        print("    allUsers = \(userNames)")
 		
 	}
 }
