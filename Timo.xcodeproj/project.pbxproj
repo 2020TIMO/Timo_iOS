@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29F9D61A25565B94002DEF23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F9D61925565B94002DEF23 /* AppDelegate.swift */; };
+		29F9D61C25565B94002DEF23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F9D61B25565B94002DEF23 /* SceneDelegate.swift */; };
+		29F9D61E25565B94002DEF23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F9D61D25565B94002DEF23 /* ViewController.swift */; };
+		29F9D62125565B94002DEF23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F9D61F25565B94002DEF23 /* Main.storyboard */; };
+		29F9D62425565B94002DEF23 /* Timo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29F9D62225565B94002DEF23 /* Timo.xcdatamodeld */; };
+		29F9D62625565B95002DEF23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29F9D62525565B95002DEF23 /* Assets.xcassets */; };
+		29F9D62925565B95002DEF23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F9D62725565B95002DEF23 /* LaunchScreen.storyboard */; };
+		29F9D63125566247002DEF23 /* HT_CRFD.csv in Resources */ = {isa = PBXBuildFile; fileRef = 29F9D63025566246002DEF23 /* HT_CRFD.csv */; };
+		29F9D633255677DC002DEF23 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F9D632255677DC002DEF23 /* DetailViewController.swift */; };
+		29F9D6352556843A002DEF23 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F9D6342556843A002DEF23 /* Model.swift */; };
+		29F9D63D25569C21002DEF23 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F9D63C25569C21002DEF23 /* SettingViewController.swift */; };
+		29F9D6402556A51E002DEF23 /* TimoMoney+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F9D63E2556A51E002DEF23 /* TimoMoney+CoreDataClass.swift */; };
+		29F9D6412556A51E002DEF23 /* TimoMoney+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F9D63F2556A51E002DEF23 /* TimoMoney+CoreDataProperties.swift */; };
+		29F9D6432556A53C002DEF23 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F9D6422556A53C002DEF23 /* CoreDataManager.swift */; };
+		29F9D6452556D8C8002DEF23 /* GmarketSansLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29F9D6442556D5FC002DEF23 /* GmarketSansLight.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		29F9D61625565B94002DEF23 /* Timo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29F9D61925565B94002DEF23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		29F9D61B25565B94002DEF23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		29F9D61D25565B94002DEF23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		29F9D62025565B94002DEF23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		29F9D62325565B94002DEF23 /* Timo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Timo.xcdatamodel; sourceTree = "<group>"; };
+		29F9D62525565B95002DEF23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		29F9D62825565B95002DEF23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		29F9D62A25565B95002DEF23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29F9D63025566246002DEF23 /* HT_CRFD.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HT_CRFD.csv; sourceTree = "<group>"; };
+		29F9D632255677DC002DEF23 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		29F9D6342556843A002DEF23 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		29F9D63C25569C21002DEF23 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		29F9D63E2556A51E002DEF23 /* TimoMoney+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimoMoney+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		29F9D63F2556A51E002DEF23 /* TimoMoney+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimoMoney+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		29F9D6422556A53C002DEF23 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		29F9D6442556D5FC002DEF23 /* GmarketSansLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansLight.otf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29F9D61325565B94002DEF23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29F9D60D25565B94002DEF23 = {
+			isa = PBXGroup;
+			children = (
+				29F9D61825565B94002DEF23 /* Timo */,
+				29F9D61725565B94002DEF23 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		29F9D61725565B94002DEF23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29F9D61625565B94002DEF23 /* Timo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29F9D61825565B94002DEF23 /* Timo */ = {
+			isa = PBXGroup;
+			children = (
+				29F9D63E2556A51E002DEF23 /* TimoMoney+CoreDataClass.swift */,
+				29F9D63F2556A51E002DEF23 /* TimoMoney+CoreDataProperties.swift */,
+				29F9D61925565B94002DEF23 /* AppDelegate.swift */,
+				29F9D61B25565B94002DEF23 /* SceneDelegate.swift */,
+				29F9D61D25565B94002DEF23 /* ViewController.swift */,
+				29F9D632255677DC002DEF23 /* DetailViewController.swift */,
+				29F9D63C25569C21002DEF23 /* SettingViewController.swift */,
+				29F9D6342556843A002DEF23 /* Model.swift */,
+				29F9D6422556A53C002DEF23 /* CoreDataManager.swift */,
+				29F9D61F25565B94002DEF23 /* Main.storyboard */,
+				29F9D62525565B95002DEF23 /* Assets.xcassets */,
+				29F9D62725565B95002DEF23 /* LaunchScreen.storyboard */,
+				29F9D62A25565B95002DEF23 /* Info.plist */,
+				29F9D62225565B94002DEF23 /* Timo.xcdatamodeld */,
+				29F9D63025566246002DEF23 /* HT_CRFD.csv */,
+				29F9D6442556D5FC002DEF23 /* GmarketSansLight.otf */,
+			);
+			path = Timo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29F9D61525565B94002DEF23 /* Timo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29F9D62D25565B95002DEF23 /* Build configuration list for PBXNativeTarget "Timo" */;
+			buildPhases = (
+				29F9D61225565B94002DEF23 /* Sources */,
+				29F9D61325565B94002DEF23 /* Frameworks */,
+				29F9D61425565B94002DEF23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Timo;
+			productName = Timo;
+			productReference = 29F9D61625565B94002DEF23 /* Timo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29F9D60E25565B94002DEF23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "김보민";
+				TargetAttributes = {
+					29F9D61525565B94002DEF23 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 29F9D61125565B94002DEF23 /* Build configuration list for PBXProject "Timo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29F9D60D25565B94002DEF23;
+			productRefGroup = 29F9D61725565B94002DEF23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29F9D61525565B94002DEF23 /* Timo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29F9D61425565B94002DEF23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29F9D6452556D8C8002DEF23 /* GmarketSansLight.otf in Resources */,
+				29F9D62925565B95002DEF23 /* LaunchScreen.storyboard in Resources */,
+				29F9D62625565B95002DEF23 /* Assets.xcassets in Resources */,
+				29F9D62125565B94002DEF23 /* Main.storyboard in Resources */,
+				29F9D63125566247002DEF23 /* HT_CRFD.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29F9D61225565B94002DEF23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29F9D61E25565B94002DEF23 /* ViewController.swift in Sources */,
+				29F9D61A25565B94002DEF23 /* AppDelegate.swift in Sources */,
+				29F9D633255677DC002DEF23 /* DetailViewController.swift in Sources */,
+				29F9D6352556843A002DEF23 /* Model.swift in Sources */,
+				29F9D62425565B94002DEF23 /* Timo.xcdatamodeld in Sources */,
+				29F9D6402556A51E002DEF23 /* TimoMoney+CoreDataClass.swift in Sources */,
+				29F9D63D25569C21002DEF23 /* SettingViewController.swift in Sources */,
+				29F9D61C25565B94002DEF23 /* SceneDelegate.swift in Sources */,
+				29F9D6432556A53C002DEF23 /* CoreDataManager.swift in Sources */,
+				29F9D6412556A51E002DEF23 /* TimoMoney+CoreDataProperties.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		29F9D61F25565B94002DEF23 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29F9D62025565B94002DEF23 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		29F9D62725565B95002DEF23 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29F9D62825565B95002DEF23 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		29F9D62B25565B95002DEF23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		29F9D62C25565B95002DEF23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29F9D62E25565B95002DEF23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76R96GR5TQ;
+				INFOPLIST_FILE = Timo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.techtown.Timo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		29F9D62F25565B95002DEF23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76R96GR5TQ;
+				INFOPLIST_FILE = Timo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.techtown.Timo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29F9D61125565B94002DEF23 /* Build configuration list for PBXProject "Timo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29F9D62B25565B95002DEF23 /* Debug */,
+				29F9D62C25565B95002DEF23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29F9D62D25565B95002DEF23 /* Build configuration list for PBXNativeTarget "Timo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29F9D62E25565B95002DEF23 /* Debug */,
+				29F9D62F25565B95002DEF23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		29F9D62225565B94002DEF23 /* Timo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				29F9D62325565B94002DEF23 /* Timo.xcdatamodel */,
+			);
+			currentVersion = 29F9D62325565B94002DEF23 /* Timo.xcdatamodel */;
+			path = Timo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 29F9D60E25565B94002DEF23 /* Project object */;
+}
