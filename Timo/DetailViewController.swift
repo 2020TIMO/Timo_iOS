@@ -89,7 +89,11 @@ extension DetailViewController: UITableViewDelegate{
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "SupportCell", for: indexPath) as! SupportCell
 		tableView.deselectRow(at: indexPath, animated: true)
+		tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
 		price = money[indexPath.row]
+	}
+	func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+		tableView.cellForRow(at: indexPath)?.accessoryType = .none
 	}
 }
 

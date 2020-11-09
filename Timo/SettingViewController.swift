@@ -16,9 +16,17 @@ class SettingViewController: UIViewController{
 			.saveMoney(id: 1, money: timomoney) { onSuccess in
 							   print("saved = \(onSuccess)")
 			   }
+		nowMoney.text = (moneyText.text ?? "0") + "원"
 	}
-	@IBOutlet weak var nowMoney: UILabel!
+	@IBOutlet weak var nowMoney: UILabel! {
+		didSet{
+			DispatchQueue.main.async {
+				self.nowMoney.reloadInputViews()
+			}
+		}
+	}
 	var timomoney: Int64 = 0
+	var txtmoney: String = "0"
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -26,7 +34,6 @@ class SettingViewController: UIViewController{
 		let users: [TimoMoney] = CoreDataManager.shared.getMoney()
 		let userNames: [Int64] = users.map({$0.money})
 		
-        print("    allUsers = \(userNames)")
 		
 	}
 }
